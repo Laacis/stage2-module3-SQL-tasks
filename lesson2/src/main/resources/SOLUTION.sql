@@ -64,16 +64,16 @@ INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES
     (SELECT id FROM student WHERE name = 'Ed')
 );
 
-INSERT INTO marks (student_id, subject_id, mark) VALUES
+INSERT INTO mark (student_id, subject_id, mark) VALUES
 (
     (SELECT id FROM student WHERE name='Chris'),
     (SELECT id FROM subject WHERE name='Art'),
     8
 ),
- (
-    (SELECT id FROM student WHERE name='Oliver'),
-    (SELECT id FROM subject WHERE name='History'),
-    5
+(
+(SELECT id FROM student WHERE name='Oliver'),
+(SELECT id FROM subject WHERE name='History'),
+5
 ),
 (
     (SELECT id FROM student WHERE name='James'),
