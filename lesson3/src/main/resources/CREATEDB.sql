@@ -10,7 +10,7 @@ CREATE TABLE subject
     id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(250),
     description VARCHAR(255),
-    grade int NOT NULL
+    grade int NOT NULL CHECK (grade BETWEEN 1 AND 5)
 );
 
 CREATE TABLE mark
