@@ -1,4 +1,4 @@
-SELECT * FROM payment WHERE amunt >= 500;
+SELECT * FROM payment WHERE amount >= 500;
 
 SELECT * FROM student
          WHERE birthday <= DATEADD('20240413', INTERVAL -20 YEAR);
@@ -17,5 +17,5 @@ SELECT * FROM payment
 SELECT * FROM student WHERE name LIKE 'A%';
 
 SELECT * FROM student
-    WHERE (name='Roxi' AND groupnumber=4)
-    OR (name='Tallie' AND groupnumber=9);
+    WHERE (name LIKE 'Roxi%' AND groupnumber=4)
+    OR (name LIKE 'Tallie%' AND groupnumber=9);
