@@ -1,18 +1,18 @@
 SELECT * FROM payment WHERE amount >= 500;
 
 SELECT * FROM student
-         WHERE birthday <= DATEADD('20240413', INTERVAL -20 YEAR);
+         WHERE birthday <= DATEADD(YEAR, -20, '20240413');
 
 SELECT * FROM student
     WHERE groupnumber = 10
-    AND birthday >= DATEADD('20240413', INTERVAL -20 YEAR);
+    AND birthday >= DATEADD(YEAR, -20, '20240413');
 
 SELECT * FROM student
     WHERE name LIKE 'Mike%'
     OR groupnumber BETWEEN 4 AND 6;
 
 SELECT * FROM payment
-    WHERE payment_date >= DATEADD('20240413', INTERVAL -8 MONTH);
+    WHERE payment_date >= DATEADD(MONTH, -8, '20240413');
 
 SELECT * FROM student WHERE name LIKE 'A%';
 
