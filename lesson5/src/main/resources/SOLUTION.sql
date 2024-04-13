@@ -12,7 +12,7 @@ SELECT * FROM student
     OR groupnumber BETWEEN 4 AND 6;
 
 SELECT * FROM payment
-    WHERE payment_date >= DATEADD(MONTH, -8, CURRENT_TIMESTAMP());
+    WHERE payment_date >= DATEADD(MONTH, -8, '20240413');
 
 SELECT * FROM student WHERE name LIKE 'A%';
 
