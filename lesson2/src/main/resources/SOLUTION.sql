@@ -1,20 +1,18 @@
-INSERT INTO student (name, birthday, groupnumber)
-VALUES
-    ('John', '2010-01-01', 1),
-    ('Chris', '2010-02-02', 1),
-    ('Carl', '2010-03-03', 1),
-    ('Oliver', '2009-03-04', 2),
-    ('James', '2009-07-29', 2),
-    ('Lucas', '2009-05-04', 2),
-    ('Henry', '2009-11-23', 2),
-    ('Jacob', '2009-05-09', 3),
-    ('Logan', '2009-03-12', 3),
-    ('Melia', '2008-02-24', 4),
-    ('Adolf', '2008-07-23', 4),
-    ('Ahmed', '2008-12-04', 4),
-    ('Margo', '2007-04-03', 5),
-    ('Jose', '2007-05-13', 5),
-    ('Ed', '2007-01-13', 5);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('John', '2010-01-01', 1);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Chris', '2010-02-02', 1);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Carl', '2010-03-03', 1);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Oliver', '2009-03-04', 2);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('James', '2009-07-29', 2);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Lucas', '2009-05-04', 2);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Henry', '2009-11-23', 2);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Jacob', '2009-05-09', 3);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Logan', '2009-03-12', 3);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Melia', '2008-02-24', 4);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Adolf', '2008-07-23', 4);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Ahmed', '2008-12-04', 4);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Margo', '2007-04-03', 5);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Jose', '2007-05-13', 5);
+INSERT INTO student (name, birthday, groupnumber) VALUES ('Ed', '2007-01-13', 5);
 
 
 INSERT INTO subject (name, description, grade) VALUES
