@@ -8,11 +8,11 @@ SELECT sub.* FROM subject sub
         SELECT  AVG(mark) FROM mark
         );
 
-SELECT stud.* FROm student stud JOIN (
+SELECT stud.* FROM student stud JOIN (
     SELECT student_id, AVG(amount) AS avg_pay
     FROM payment
     GROUP BY student_id
-    ) AS avg_stud_pay ON stud.id=stud_avg_pay.student_id
+    ) AS avg_stud_pay ON stud.id=avg_stud_pay.student_id
     WHERE avg_stud_pay.avg_pay < (
         SELECT AVG(amount) FROM payment
     );
