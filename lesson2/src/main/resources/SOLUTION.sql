@@ -26,8 +26,8 @@ INSERT INTO subject (name, description, grade) VALUES
     ('Math', 'Math class for grade 3', 3),
     ('Science', 'Science class for grade 4', 4),
     ('IT', 'IT class for grade 4', 4),
-    ('Chemistry', 'Chemistry class for grade 5', 5),
-    ('Politics', 'Politics class for grade 5', 5);
+    ('Science 5', 'Science class for grade 5', 5),
+    ('IT 5', 'IT class for grade 5', 5);
 
 INSERT INTO paymenttype (name) VALUES ('DAILY'), ('WEEKLY'), ('MONTHLY');
 
