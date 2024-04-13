@@ -1,1 +1,8 @@
-select * from student;
+ALTER TABLE mark DISABLE CONSTRAINT MARK_STUDENT_ID_FKEY;
+DELETE FROM student WHERE id IN (
+    SELECT student_id
+    FROM mark
+    WHERE mark < 4
+);
+DELETE FROM mark WHERE mark <4;
+ALTER TABLE mark ENABLE CONSTRAINT MARK_STUDENT_ID_FKEY;
