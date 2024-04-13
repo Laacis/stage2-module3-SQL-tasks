@@ -1,6 +1,7 @@
-INSERT INTO student (name, birthday, groupnumber) VALUES
+INSERT INTO student (name, birthday, groupnumber)
+VALUES
     ('John', '2010-01-01', 1),
-    ('Chris','2010-02-02', 1),
+    ('Chris', '2010-02-02', 1),
     ('Carl', '2010-03-03', 1),
     ('Oliver', '2009-03-04', 2),
     ('James', '2009-07-29', 2),
@@ -14,6 +15,7 @@ INSERT INTO student (name, birthday, groupnumber) VALUES
     ('Margo', '2007-04-03', 5),
     ('Jose', '2007-05-13', 5),
     ('Ed', '2007-01-13', 5);
+
 
 INSERT INTO subject (name, description, grade) VALUES
     ('Art','Art class for grade 1',1),
