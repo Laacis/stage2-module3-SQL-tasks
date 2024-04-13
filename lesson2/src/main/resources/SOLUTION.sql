@@ -23,7 +23,7 @@ INSERT INTO subject (name, description, grade) VALUES ('PE', 'PE class for grade
 INSERT INTO subject (name, description, grade) VALUES ('Math', 'Math class for grade 3', 3);
 INSERT INTO subject (name, description, grade) VALUES ('Science', 'Science class for grade 4', 4);
 INSERT INTO subject (name, description, grade) VALUES ('IT', 'IT class for grade 4', 4);
-INSERT INTO subject (name, description, grade) VALUES ('Science 5', 'Science class for grade 5', 5;,
+INSERT INTO subject (name, description, grade) VALUES ('Science 5', 'Science class for grade 5', 5;
 INSERT INTO subject (name, description, grade) VALUES ('IT 5', 'IT class for grade 5', 5);
 
 INSERT INTO paymenttype (name) VALUES ('DAILY');
