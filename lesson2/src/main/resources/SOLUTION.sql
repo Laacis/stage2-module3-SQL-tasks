@@ -59,7 +59,7 @@ INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (
     (SELECT id FROM paymenttype WHERE name = 'MONTHLY'),
     4000.00,
     CURRENT_TIMESTAMP(),
-    (SELECT id FROM student WHERE name = 'Eva')
+    (SELECT id FROM student WHERE name = 'Melia')
 );
 INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES (
     (SELECT id FROM paymenttype WHERE name = 'DAILY'),
@@ -75,8 +75,8 @@ INSERT INTO mark (student_id, subject_id, mark) VALUES
     8
 );
 INSERT INTO mark (student_id, subject_id, mark) VALUES (
-    (SELECT id FROM student WHERE name='Oliver'),
-    (SELECT id FROM subject WHERE name='History'),
+    (SELECT id AS student_id FROM student WHERE name='Oliver'),
+    (SELECT id AS subject_id FROM subject WHERE name='History'),
     5
 );
 INSERT INTO mark (student_id, subject_id, mark) VALUES (
