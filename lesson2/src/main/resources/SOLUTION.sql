@@ -31,34 +31,34 @@ INSERT INTO paymenttype (name) VALUES ('DAILY'),('WEEKLY'),('MONTHLY');
 
 INSERT INTO payment (type_id, amount, payment_date, student_id) VALUES
 (
-     (SELECT id FROM paymenttype WHERE name = 'Weekly'),
+     (SELECT id FROM paymenttype WHERE name = 'WEEKLY'),
      1000.00,
      CURRENT_TIMESTAMP(),
      (SELECT id FROM student WHERE name = 'John')
 ),
 (
-    (SELECT id FROM paymenttype WHERE name = 'Monthly'),
+    (SELECT id FROM paymenttype WHERE name = 'MONTHLY'),
     4000.00,
     CURRENT_TIMESTAMP(),
     (SELECT id FROM student WHERE name = 'Oliver')
 ),
 (
-    (SELECT id FROM paymenttype WHERE name = 'Weekly'),
+    (SELECT id FROM paymenttype WHERE name = 'WEEKLY'),
     1000.00,
     CURRENT_TIMESTAMP(),
     (SELECT id FROM student WHERE name = 'Henry')
 ),(
-    (SELECT id FROM paymenttype WHERE name = 'Daily'),
+    (SELECT id FROM paymenttype WHERE name = 'DAILY'),
     200.00,
     CURRENT_TIMESTAMP(),
     (SELECT id FROM student WHERE name = 'James')
 ),(
-    (SELECT id FROM paymenttype WHERE name = 'Monthly'),
+    (SELECT id FROM paymenttype WHERE name = 'MONTHLY'),
     4000.00,
     CURRENT_TIMESTAMP(),
     (SELECT id FROM student WHERE name = 'Eva')
 ),(
-    (SELECT id FROM paymenttype WHERE name = 'Daily'),
+    (SELECT id FROM paymenttype WHERE name = 'DAILY'),
     200.00,
     CURRENT_TIMESTAMP(),
     (SELECT id FROM student WHERE name = 'Ed')
