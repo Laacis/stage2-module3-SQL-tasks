@@ -8,8 +8,9 @@ SELECT m.* FROM mark m
 SELECT s.* FROM student s
     JOIN payment pay ON s.id = pay.student_id
     WHERE pay.type_id = (
-        SELECT id FROM paymenttype
-        WHERE type.name = 'WEEKLY'
+        SELECT id
+        FROM paymenttype
+        WHERE name = 'WEEKLY'
     );
 
 SELECT s.* FROM student s
